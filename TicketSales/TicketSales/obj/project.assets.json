@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paco\\source\\repos\\TicketSales\\TicketSales\\TicketSales.csproj",
+      "projectUniqueName": "C:\\Users\\Paco\\Documents\\GitHub\\TicketSales\\TicketSales\\TicketSales\\TicketSales.csproj",
       "projectName": "TicketSales",
-      "projectPath": "C:\\Users\\Paco\\source\\repos\\TicketSales\\TicketSales\\TicketSales.csproj",
+      "projectPath": "C:\\Users\\Paco\\Documents\\GitHub\\TicketSales\\TicketSales\\TicketSales\\TicketSales.csproj",
       "packagesPath": "C:\\Users\\Paco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paco\\source\\repos\\TicketSales\\TicketSales\\obj\\",
+      "outputPath": "C:\\Users\\Paco\\Documents\\GitHub\\TicketSales\\TicketSales\\TicketSales\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
