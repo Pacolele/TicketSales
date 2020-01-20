@@ -1,0 +1,11 @@
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.deps.json
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.runtimeconfig.json
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.runtimeconfig.dev.json
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.dll
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.pdb
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.csprojAssemblyReference.cache
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.csproj.CoreCompileInputs.cache
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.AssemblyInfoInputs.cache
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.AssemblyInfo.cs
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.dll
+C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.pdb
