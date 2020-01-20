@@ -67,7 +67,7 @@ class Program
         //StreamWriter sw = new StreamWriter(path);
         //Select what type of tickets -> 
 
-        0
+        
         int sum = 0;
         Console.WriteLine("Select what type of ticket u want, adult, child or senior tickets.");
         string ticketType = Console.ReadLine();
