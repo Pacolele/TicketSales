@@ -53,6 +53,9 @@ class Program
             case "buy":
                 Buy();
                 break;
+            case "refund":
+                Refund();
+                break;
             case "exit":
                 Environment.Exit(0);
                 break;
@@ -62,33 +65,61 @@ class Program
         }
     }
 
+    private void Refund()
+    {
+
+    }
+
     public void Buy()
     {
         //StreamWriter sw = new StreamWriter(path);
         //Select what type of tickets -> 
+        /*
+        int id = 0;
 
-        
+        for(id = 0; id > items.Count; id++)
+        {
+
+        }
+        */
+        int id = 0;
         int sum = 0;
-        Console.WriteLine("Select what type of ticket u want, adult, child or senior tickets.");
-        string ticketType = Console.ReadLine();
-        int number = 0;
-        try
+        int[] numbers = new int[items.Count];
+
+        while (true)
         {
-            Console.WriteLine("Please enter how many tickets you would like.");
-            number = int.Parse(Console.ReadLine());
-        }
-        catch
-        {
-            Console.WriteLine("Try writing a number");
-        }
-        foreach(Item i in items)
-        {
-            if (ticketType.Equals(i.type))
+
+            Console.WriteLine("\nSelect what type of ticket u want, adult, child or senior tickets.\nType 'done' if ur happy with your order.");
+            string ticketType = Console.ReadLine();
+
+            try
             {
-                sum += i.Price * number;
+                for (int i = 0; i < items.Count; i++)
+                {
+                    if (ticketType.Equals(items[i].type))
+                    {
+                        Console.WriteLine("\nPlease enter how many tickets you would like.");
+                        numbers[i] = int.Parse(Console.ReadLine());
+                        sum += items[i].Price * numbers[i];
+                    }
+                    
+                }
             }
+            catch
+            {
+                Console.WriteLine("\nTry writing a number");
+            }
+            Console.WriteLine($"Your total value is: {sum}$");
+            Console.WriteLine("Are you happy with your order Y/N");
+            if (Console.ReadLine().ToUpper() == "Y" )
+            {
+                Console.WriteLine($"Your order ID:{id}");
+                id++;
+                break;
+            } 
+            
+                
         }
-        Console.WriteLine($"Your total value is: {sum}$");
 
 
 
@@ -138,8 +169,8 @@ class Program
     private void Help()
     {
         Console.WriteLine("\nbuy - buy tickets \n" +
-            "temp - adad\n" +
-            "temp - aaaa\n");
+            "refund - refunds tickets\n" +
+            "exit - get out of here\n");
     }
 }
 
