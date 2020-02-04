@@ -6,7 +6,9 @@ using System.Collections.Generic;
 class Program
 {
     List<Item> items = new List<Item>();
+    //List<Receipt> receipt = new List<Receipt>();
     const string path = @"..\..\..\Receipt.txt";
+    int id = 0;
 
     public Program()
     {
@@ -22,12 +24,11 @@ class Program
 
     void Run()
     {
-
-
+        UpdateID();
         Console.WriteLine("Hello welcome to this ticket booth here you can buy your tickets \nPlease enter 'help' for available commands\n\n");
         while (true)
         {
-            Console.WriteLine("\nMenu\n>>>");
+            Console.WriteLine("\nBooth\n>>>");
             string input = Console.ReadLine();
             if (input == "exit")
             {
@@ -40,6 +41,12 @@ class Program
             }
         }
 
+    }
+
+    private void UpdateID()
+    {
+        string[] lines = File.ReadAllLines(path);
+        id = lines.Length / 4;
     }
 
     void InputCentre(string input)
@@ -67,64 +74,88 @@ class Program
 
     private void Refund()
     {
+        Console.WriteLine("You want to refund? \n\n" + "Please enter your order Id to refund");
+        string input = Console.ReadLine();
+        string[] lines = File.ReadAllLines(path);
+        for(int i = 0; i < lines.Length; i++)
+        {
+            string[] strings = lines[i].Split("$");
 
+            if (strings[0] == "ID" && strings[1] == input)
+            {
+                lines[i] += "$Refunded";
+            }
+
+        }
+        File.WriteAllLines(path, lines);
     }
 
     public void Buy()
     {
-        //StreamWriter sw = new StreamWriter(path);
-        //Select what type of tickets -> 
-        /*
-        int id = 0;
-
-        for(id = 0; id > items.Count; id++)
-        {
-
-        }
-        */
-        int id = 0;
         int sum = 0;
-        int[] numbers = new int[items.Count];
+        int amountofItems = 0;
+        StreamWriter sw = new StreamWriter(path, true);
+        sw.WriteLine("ID$" + id);
+        Console.WriteLine($"Your order ID:{id}");
+        
+        foreach (Item i in items)
+        {
+            Console.WriteLine("how many " + i.type + " tickets would you like?");
+            amountofItems = CheckIfInt();
+            sum += i.Price * amountofItems;
+            sw.WriteLine(i.type + " $" + i.Price * amountofItems);
+            
+        }
+        sw.WriteLine("$" + sum);
+        sw.Close();
+        Console.WriteLine($"Your total value is: {sum}$");
 
+        id++;
+    }
+
+    int CheckIfInt()
+    {
         while (true)
         {
-
-            Console.WriteLine("\nSelect what type of ticket u want, adult, child or senior tickets.\nType 'done' if ur happy with your order.");
-            string ticketType = Console.ReadLine();
-
             try
             {
-                for (int i = 0; i < items.Count; i++)
-                {
-                    if (ticketType.Equals(items[i].type))
-                    {
-                        Console.WriteLine("\nPlease enter how many tickets you would like.");
-                        numbers[i] = int.Parse(Console.ReadLine());
-                        sum += items[i].Price * numbers[i];
-                    }
-                    
-                }
+                return Int32.Parse(Console.ReadLine());
             }
             catch
             {
-                Console.WriteLine("\nTry writing a number");
+                Console.WriteLine("try entering a number");
             }
-            Console.WriteLine($"Your total value is: {sum}$");
-            Console.WriteLine("Are you happy with your order Y/N");
-            if (Console.ReadLine().ToUpper() == "Y" )
-            {
-                Console.WriteLine($"Your order ID:{id}");
-                id++;
-                break;
-            } 
-            
-                
         }
-
-
-
-
     }
+
+
+    // Problem
+
+    /*
+        Console.WriteLine("Are you happy with your order Y/N");
+        if (Console.ReadLine().ToUpper() == "Y" )
+        {
+            using (StreamWriter sw = new StreamWriter(path))
+            {
+                foreach (Item i in items)
+                    sw.WriteLine(i.type + " $" + i.Price * boughtAmount);
+            }
+            break;
+        } */
+
+
+    /*
+               for (int i = 0; i < items.Count; i++)
+               {
+                   if (ticketType.Equals(items[i].type))
+                   {
+                       Console.WriteLine("\nPlease enter how many tickets you would like.");
+                       boughtAmount = int.Parse(Console.ReadLine());
+
+                       sum += items[i].Price * boughtAmount;
+                   }
+
+               }*/
 
     //public void AddChildTicket()
     //{
