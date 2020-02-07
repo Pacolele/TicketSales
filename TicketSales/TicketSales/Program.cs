@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 class Program
 {
+    #region GlobalInfo
     List<Item> items = new List<Item>();
     //List<Receipt> receipt = new List<Receipt>();
     const string receipt = @"..\..\..\Receipt.txt";
@@ -11,7 +12,7 @@ class Program
     int id = 0;
     int newSum = 0;
     int RefundSum = 0;
-
+    #endregion
     public Program()
     {
         items.Add(new Item { Price = 100, type = "adult" });
@@ -134,11 +135,11 @@ class Program
         StreamWriter sw = new StreamWriter(receipt, true);
         sw.WriteLine("ID$" + id);
 
-        Console.WriteLine($"Your order ID:{id}");
+        Console.WriteLine($"Your order ID is:{id}");
 
         foreach (Item i in items)
         {
-            Console.WriteLine("how many " + i.type + " tickets would you like?");
+            Console.WriteLine("\nhow many " + i.type + " tickets would you like?");
             amountofItems = CheckIfInt();
             sum += i.Price * amountofItems;
             sw.WriteLine(i.type + " $" + i.Price * amountofItems);
@@ -183,4 +184,3 @@ class Program
         File.WriteAllLines(information, strings);
     }
 }
-
