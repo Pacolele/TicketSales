@@ -9,3 +9,13 @@ C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\net
 C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.AssemblyInfo.cs
 C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.dll
 C:\Users\Paco\Documents\GitHub\TicketSales\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.pdb
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.deps.json
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.runtimeconfig.json
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.runtimeconfig.dev.json
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.dll
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\bin\Debug\netcoreapp2.1\TicketSales.pdb
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.csprojAssemblyReference.cache
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.AssemblyInfoInputs.cache
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.AssemblyInfo.cs
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.dll
+C:\Users\Robin\source\repos\PRRPRR01v2\InlämningarTicketSales\Elliot\TicketSales\TicketSales\obj\Debug\netcoreapp2.1\TicketSales.pdb

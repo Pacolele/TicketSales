@@ -184,3 +184,18 @@ class Program
         File.WriteAllLines(information, strings);
     }
 }
+
+/*
+ * Robin:
+ * Mycket bra jobbat! Programmet känns väldigt enkelt och rent, vilket gör det
+ * lätt att läsa. Det är tydligt strukturerat och bra optimerat ut.
+ * 
+ * Det enda som jag skulle vilja ha är att man kan se informationen i programmet,
+ * t.ex. skriva in 'info' eller liknande för att skriva ut försäljningen, summan
+ * av återköp etc. Inte ett stort problem dock, då det är tydligt skrivet i 
+ * textfilerna.
+ * 
+ * Namngivningen ser bra ut med ett undantag (RefundSum? Why CamelCase?). 
+ * 
+ * Riktigt bra rapport, och bra arbetat med de funktionella kraven!
+ */
